@@ -61,21 +61,23 @@ public class TimeTravelr {
 //works here		System.out.println(line.getInputQueue());
 		frame.setSize(400,600);
 // empty here		System.out.println(line.getInputQueue());
-		frame.setBackground(Color.RED);
+		frame.setBackground(Color.ORANGE);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		JPanel panel = new JPanel();
 		panel.add(startButton);
 		frame.add(panel, BorderLayout.PAGE_START);
 // empty here		System.out.println(line.getInputQueue());
-		frame.add(new LineCanvas(line));
+		frame.add(new GamePanel());
 		frame.setVisible(true);
 		
 		
 	}
 }
 class GamePanel extends JComponent {
-	
+	public GamePanel() {
+		
+	}
 }
 
 
